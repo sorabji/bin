@@ -2,4 +2,4 @@
 
 TESTS=${1:-"src/"}
 
-./vendor/bin/phpunit --debug --coverage-html ./app/logs/report/ --testdox-html ./app/logs/testdox.html -c app/ $TESTS
+./bin/phpunit --debug --coverage-html ./app/logs/report/ --testdox-html ./app/logs/testdox.html -c app/ $TESTS ; zenity --info --text "Done!"
